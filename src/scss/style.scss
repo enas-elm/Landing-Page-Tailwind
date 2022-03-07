@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+html {
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	color: #222222;
+
+@media (max-width: 768px){
+		font-size: 14px;
+	}
+
+@media (max-width: 660px){
+		font-size: 13px;
+	}
+}
+
+.main {
+	height: 874px;
+}
+
+.title {
+	top : 487px;
+	left: 182px;
+	position: absolute;
+}
+
+h1 {
+	font-size: 5.5rem;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+img {
+	object-fit: contain;
+}
+
+.circle { 
+	height: 4.5rem; 
+	width: 4.5rem;
+	line-height: 4.5rem;
+	border-radius: 50%;
+	text-align: center;
+} 
+
+#nav-content {
+	display: none;
+	position: absolute;
+	top : 116px;
+	left: 0;
+}
+
+.lineorange {
+	top: 50rem;
+}
+
+
+
+h5{
+    color: theme('colors.textWhite');
+    font-weight: 600;
+}
+
+.location{
+    width: fit-content;
+    height: 50%;
+}
+/* PLACE A L'EQUIPE ************************************************************************************************* */
+.img_equipe_size{
+    width: 15rem;
+    height: auto;
+
+    @media (max-width: 768px){
+        max-width: 10rem;
+    }
+}
+
+.equipe_text{
+    opacity: 0; // opacité 0 car il y a déjà le texte sur l'image mais je n'ai pas pu télécharger l'image sans le texte
+    white-space: nowrap;
+    font-size: 1vw;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+}
+
+.presentation{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin: 0 auto 2.5rem auto;
+    width: 60%;
+
+    @media (max-width: 768px){
+        width: 90%;
+    }
+}
+
+// CARTE ***************************************************************************************************
+
+.back{
+    background-color: theme('colors.textWhite');
+    padding-left: 5rem;
+    padding-right: 10rem;
+    display: flex;
+}
+
+/* JOURNAL *************************************************************************************************** */
+.journal_text{
+    @apply text-textGray;
+    margin-bottom: 1rem;
+    @media (max-width: 660px){
+        margin-bottom: 0.25rem;
+    }
+}
+
+.card{
+    @apply border-2 border-borderJournal;
+
+    width: 30%;
+    @media (max-width: 660px){
+        width: 60%;
+    }
+}
+
+// FOOTER ***************************************************************************************************
+
+footer p{
+    color: white;
+}
+.main_footer h5{
+    margin-bottom: 1.5rem;
+    @media (max-width: 768px){
+        margin-bottom: 0.25rem;
+    }
+}
+
+.main_footer div{
+    margin-bottom: 1.5rem;
+}
+
+.main_footer  p{
+    margin-bottom: 1rem;
+    width: 12.25rem;
+    @media (max-width: 768px){
+        margin-bottom: 0.25rem;
+    }
+}
+
+
+@media (max-width: 1280px) {
+	.lineorange {
+		top: 70rem;
+	}
+
+	.lineyellow {
+		top: 160rem;
+	}
+
+}
+
+@media (max-width: 810px) {
+	.title {
+		left: 100px;
+	}
+	
+	.lineorange {
+		position: absolute;
+		top: 1500px;
+	}
+
+	.lineyellow {
+		position: absolute;
+		top: 2950px;
+	}
+}
+
+@media (max-width: 750px){
+
+	.main {
+		height: 450px;
+		background-size: cover;
+	}
+
+	.title {
+		top: 250px;
+	}
+
+	.lineorange {
+		top: 1200px;
+		left: 50%;
+	}
+
+	.lineyellow {
+		left: 50%;
+		top: 2900px;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+}
+
+@media (max-width: 475px) {
+
+	main {
+		height: 400px;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	h4 {
+		font-size: 1.25rem;
+	}
+
+	.lineorange {
+		top: 1150px;
+		height: 30rem;
+	}
+
+	.lineyellow {
+		top: 2900px;
+		height: 30rem;
+	}
+
+}
